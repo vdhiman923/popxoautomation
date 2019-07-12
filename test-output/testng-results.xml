@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="14" total="15" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51384" started-at="2019-07-12T07:47:25Z" finished-at="2019-07-12T07:48:17Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51384" started-at="2019-07-12T07:47:25Z" finished-at="2019-07-12T07:48:17Z">
+      <class name="tests.CategoryTests">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:tests.CategoryTests@7e0b0338]" name="setUp" is-config="true" duration-ms="49600" started-at="2019-07-12T07:47:25Z" finished-at="2019-07-12T07:48:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="clickon1subcategory1111()[pri:0, instance:tests.CategoryTests@7e0b0338]" name="clickon1subcategory1111" duration-ms="1336" started-at="2019-07-12T07:48:15Z" finished-at="2019-07-12T07:48:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickon1subcategory1111 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:tests.CategoryTests@7e0b0338]" name="close" is-config="true" duration-ms="423" started-at="2019-07-12T07:48:16Z" finished-at="2019-07-12T07:48:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- tests.CategoryTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
