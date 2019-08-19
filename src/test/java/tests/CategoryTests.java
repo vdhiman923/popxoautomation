@@ -22,17 +22,14 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import config.*;
 import Utilities.*;
 import base.driverClass;
 import objects.CategoryPFOM;
 import objects.LoginPFOM;
-import others.Base;
-import page.LoginPopxo;
 
 public class CategoryTests extends driverClass {
 	WebDriver driver;
-	LoginPopxo login, login1;
+	
 	LoginPFOM lpfom;
 	CategoryPFOM categ;
 
@@ -154,16 +151,13 @@ public class CategoryTests extends driverClass {
 		String fwindow=  list.get(0).toString();
 		driver.switchTo().window(fwindow);
 		categ.getfashion().click();
-		
 		String val = ExcelUtil.getCellData(3,1);
 		categ.clicksubcategoryFashion(val);
 		System.out.println("val::"+val);
 		String urlval = ExcelUtil.getCellData(3,2);
 		System.out.println("urlval::"+urlval);
 		System.out.println("current url="+driver.getCurrentUrl());
-
-	Assert.assertEquals(driver.getCurrentUrl(), "https://www.popxo.com/"+urlval, "url is diff");
-//	
+		Assert.assertEquals(driver.getCurrentUrl(), "https://www.popxo.com/"+urlval, "url is diff");	
  }
 	
 	// Fetching all subcategories of the fashion category.

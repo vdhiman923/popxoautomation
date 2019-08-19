@@ -15,21 +15,19 @@ public static WebDriver driverMethod()
 	
 WebDriver driver;
 
-System.setProperty("webdriver.chrome.driver", "/Users/vandana/eclipse-workspace/LearnSelenium/chromedriver");
+System.setProperty("webdriver.chrome.driver", "/Users/umeshkaushik/Downloads/_Vandana/workspace/chromedriver");
 ChromeOptions options = new ChromeOptions();
-options.addExtensions(new File("/Users/vandana/eclipse-workspace/POPXo/AdBlock_v3.48.0.crx"));
-DesiredCapabilities capabilities = new DesiredCapabilities();
-capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+//options.addExtensions(new File("/Users/vandana/eclipse-workspace/POPXo/AdBlock_v3.48.0.crx"));
+options.addArguments("--disable-notifications");
+//options.addArguments("--no-sandbox");
+
+//DesiredCapabilities capabilities = new DesiredCapabilities();
+//capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 driver = new ChromeDriver(options);
 driver.manage().window().maximize();
-driver.get("https://www.popxo.com");
+driver.get("https://dev4.popxo.com");
 return  driver;
 
-/*System.setProperty("webdriver.chrome.driver", "/Users/vandana/eclipse-workspace/LearnSelenium/chromedriver");
-driver = new ChromeDriver();
-driver.manage().window().maximize();
-driver.get("https://www.popxo.com");
-return  driver;*/
 	
 }
 }

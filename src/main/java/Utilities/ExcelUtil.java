@@ -14,7 +14,7 @@ public static XSSFWorkbook ExcelWBook;
 public static XSSFCell Cell;
 public static XSSFRow Row;
 	// This method is to set the File path and to open the Excel file, Pass Excel
-	// Path and Sheetname as Arguments to this method
+	// Path and Sheet name as Arguments to this method
 
 public static void setExcelFile() throws Exception 
 {
@@ -45,7 +45,7 @@ public static String getCellData(int RowNum, int ColNum) throws Exception{
 
         }catch (Exception e){
 
-return"";
+return "";
 
         }
 

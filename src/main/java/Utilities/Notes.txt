@@ -1,0 +1,37 @@
+Dropdown :-
+WebElement elem = driver.findElement(By.xpath("//select[contains(text(), '')]"));
+Select selectdropdown = new Select(elem);
+selectdropdown.selectByVisibleText("all");
+String s = selectdropdown.getFirstSelectedOption().getAttribute("text");
+System.out.println("value of dropdown="+s);
+
+
+Window handles:-
+for (String winhandle : driver.getWindowHandles()) {
+			driver.switchTo().window(winhandle);
+		}
+		
+
+Explicit wait:-
+
+		WebDriverWait wait = new WebDriverWait(driver, time);
+		WebElement ele = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath(path1)));
+
+		boolean status = ele.isDisplayed();
+
+		if (status) {
+			System.out.println("===== popup is visible======");
+			driver.findElement(By.xpath(path2)).click();
+		} else {
+			System.out.println("===== popup is not visible======");
+			
+	
+Scrolling :-
+
+WebElement element = driver.findElement(By.xpath("(//a[@class=\"sc-hzDkRC iDqnfh\"])[5]"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
+		
+		Thread.sleep(3000);
+	
+		

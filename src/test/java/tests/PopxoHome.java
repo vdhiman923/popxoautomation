@@ -30,6 +30,7 @@ public class PopxoHome
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--disable-notifications");
 		driver = new ChromeDriver(options);  
+		driver.manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
 		driver.get("https://www.popxo.com/");
 		//driver.manage().window().maximize();
 		//obj.closeLanguagePopup().click();
@@ -49,18 +50,19 @@ public class PopxoHome
 	public void langDropDown_eng()
 	{	
 		LoginPFOM obj = new LoginPFOM(driver);
-		driver.findElement(By.xpath("//div[@class='close-btn-lang-popup sc-cIShpX fiLeqj']")).click();
+		//driver.findElement(By.xpath("//div[@class='close-btn-lang-popup sc-cIShpX fiLeqj']")).click();
 		obj.lang_Drop_Down().click();
 		obj.eng_Drop_Down().click();
 		String english= "https://www.popxo.com/";
 		Assert.assertEquals(english,driver.getCurrentUrl());
 	}
-	@Test(enabled=false)
-	public void langDropDown_hindi()
+	@Test(enabled=true)
+	public void langDropDown_hindi() throws InterruptedException
 	{	
 		LoginPFOM obj = new LoginPFOM(driver);
-		driver.findElement(By.xpath("//div[@class='close-btn-lang-popup sc-cIShpX fiLeqj']")).click();
+		//driver.findElement(By.xpath("//div[@class='close-btn-lang-popup sc-cIShpX fiLeqj']")).click();
 		obj.lang_Drop_Down().click();
+		//Thread.sleep(2000);
 		obj.hindi_Drop_Down().click();
 		
 		String hindi="https://hindi.popxo.com/";
@@ -102,7 +104,7 @@ public class PopxoHome
 		Assert.assertEquals(marathi,driver.getCurrentUrl());
 	}
 	
-	@Test(enabled=true)
+	@Test(enabled=false)
 	public void langDropDown_bangla()
 	{	
 		LoginPFOM obj = new LoginPFOM(driver);

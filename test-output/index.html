@@ -2,10 +2,9 @@
 
 <html>
   <head>
-  <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
     <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
@@ -102,7 +101,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.CategoryTests" hash-for-method="clickon1subcategory1111">clickon1subcategory1111</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="tests.ShopTests" hash-for-method="chk">chk</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -120,14 +119,14 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.CategoryTests</span>
+              <span class="class-name">tests.ShopTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickon1subcategory1111">
-                  </a> <!-- clickon1subcategory1111 -->
-                  <span class="method-name">clickon1subcategory1111</span>
+                  <a name="chk">
+                  </a> <!-- chk -->
+                  <span class="method-name">chk</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,20 +134,20 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/mv/mbbkz4zx0cg84fdpjmfd6lb80000gq/T/testng-eclipse--1302529181/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/0h/2bv74gf12xjc7v9yxfzgt6p40000gq/T/testng-eclipse--740670260/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.CategoryTests&quot;&gt;
+      &lt;class name=&quot;tests.ShopTests&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;clickon1subcategory1111&quot;/&gt;
+          &lt;include name=&quot;chk&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- tests.CategoryTests --&gt;
+      &lt;/class&gt; &lt;!-- tests.ShopTests --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -190,14 +189,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'clickon1subcategory1111')
-data.setCell(0, 2, 'tests.CategoryTests')
-data.setCell(0, 3, 1336);
+data.setCell(0, 1, 'chk')
+data.setCell(0, 2, 'tests.ShopTests')
+data.setCell(0, 3, 35168);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -212,39 +211,19 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">14 ignored methods</span>
+            <span class="header-content">4 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.CategoryTests</span>
+              <span class="ignored-class-name">tests.ShopTests</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">getWeddingSubcategories</span>
+                <span class="ignored-method-name">clearCart</span>
                 <br/>
-                <span class="ignored-method-name">getEntertainmentSubcategories</span>
+                <span class="ignored-method-name">AddCoupon</span>
                 <br/>
-                <span class="ignored-method-name">openNewTab</span>
+                <span class="ignored-method-name">positivePaymentflow</span>
                 <br/>
-                <span class="ignored-method-name">getLifestyleSubcategories</span>
-                <br/>
-                <span class="ignored-method-name">getBeautySubcategories</span>
-                <br/>
-                <span class="ignored-method-name">clickonEntertainmenttest</span>
-                <br/>
-                <span class="ignored-method-name">clickonWeddingtest</span>
-                <br/>
-                <span class="ignored-method-name">getFashionSubcategories</span>
-                <br/>
-                <span class="ignored-method-name">clickonWellnesstest</span>
-                <br/>
-                <span class="ignored-method-name">languagedropdown</span>
-                <br/>
-                <span class="ignored-method-name">clickonBeautytest</span>
-                <br/>
-                <span class="ignored-method-name">clickonFashiontest</span>
-                <br/>
-                <span class="ignored-method-name">clickonLifestyletest</span>
-                <br/>
-                <span class="ignored-method-name">getWellnessSubcategories</span>
+                <span class="ignored-method-name">RemoveCoupon</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -256,18 +235,14 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.CategoryTests</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="chronological-class-name">tests.ShopTests</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">clickon1subcategory1111</span>
-                <span class="method-start">49600 ms</span>
+                <span class="method-name">chk</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">close</span>
-                <span class="method-start">50937 ms</span>
+                <span class="method-name">aftermethod</span>
+                <span class="method-start">35170 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

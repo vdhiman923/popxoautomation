@@ -17,12 +17,8 @@ public class AlertandPopups {
 	@FindBy(xpath = "//button[@id='wzrk-confirm']")
 	static WebElement allow_clevertap_notif;
 
-	//div[@class='wzrk-alert wiz-show-animate']" -1
-	
-	//button[@id='wzrk-cancel']-2
 	public static void cleverTapNotif(WebDriver driver, int time , String path1, String path2) {
 
-		// AlertandPopups.cleverTapNotif(driver);
 		WebDriverWait wait = new WebDriverWait(driver, time);
 		WebElement ele = wait.until(
 				ExpectedConditions.visibilityOfElementLocated(By.xpath(path1)));

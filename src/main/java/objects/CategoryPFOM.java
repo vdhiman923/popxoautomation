@@ -28,6 +28,15 @@ public class CategoryPFOM {
 	}
 
 	/**
+	 * Category Carousal
+	 */
+	
+	@FindBy(xpath="//*[@class='slick-slide slick-cloned']/div/div/div[@title]")
+	WebElement categorycarousal;
+	
+	public WebElement getCategorycarousal(){return categorycarousal;}
+	
+	/**
 	 * All categories(fashion, beauty, lifestyle etc) link
 	 */
 
@@ -136,9 +145,11 @@ public class CategoryPFOM {
 		return(driver.getCurrentUrl());	
 	}
 	
+	
 	/**
-	 * 
-	 * 
+	 * Category pages caraousal
 	 */
+	
+	
 	
 }
